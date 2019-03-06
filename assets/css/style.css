@@ -53,3 +53,9 @@ hr
     background-color:#f9f9f9;
 }
 
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+

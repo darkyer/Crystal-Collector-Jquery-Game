@@ -14,6 +14,10 @@ var gem2Value;
 var gem3Value;
 var gem4Value;
 
+var audioWin = new Audio("assets/audio/win.mp3");
+var audioLose = new Audio("assets/audio/lose.mp3");
+
+
 StartGame();
 
 function GetRandom(min,max){
@@ -31,9 +35,15 @@ function UpdateScore(){
 function CheckGameStatus(){
     if(score == randomNumber){
         win++
+        audioWin.pause();
+        audioWin.currentTime = 0;
+        audioWin.play();
         StartGame();
     }else if(score > randomNumber){
         lose++;
+        audioLose.pause();
+        audioLose.currentTime = 0;
+        audioLose.play();
         StartGame();
     }
 
@@ -57,16 +67,35 @@ function PrintScoreStatus(){
     console.log("-------------------------");
 }
 
+function RandomizeGems(min, max){
+
+    gem1Value = GetRandom(min,max);
+    gem2Value = GetRandom(min,max);
+    gem3Value = GetRandom(min,max);
+    gem4Value = GetRandom(min,max);
+
+    while(gem1Value == gem2Value){
+        gem2Value = GetRandom(min,max);
+    }
+
+    while(gem3Value == gem2Value || gem3Value == gem1Value){
+        gem3Value = GetRandom(min,max);
+    }
+    
+    while(gem4Value == gem3Value || gem4Value == gem2Value || gem4Value == gem1Value){
+        gem4Value = GetRandom(min,max);
+    }   
+
+}
+
 function StartGame(){
     randomNumber = GetRandom(19,121);
     randomNumberText.text(randomNumber);
 
     score = 0;
 
-    gem1Value = GetRandom(1,13);
-    gem2Value = GetRandom(1,13);
-    gem3Value = GetRandom(1,13);
-    gem4Value = GetRandom(1,13);
+    RandomizeGems(1,13);
+
     console.clear();
     console.log("NEW GAME------------------");
     PrintScoreStatus();
