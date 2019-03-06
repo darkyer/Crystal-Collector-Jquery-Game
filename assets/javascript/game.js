@@ -16,6 +16,7 @@ var gem4Value;
 
 var audioWin = new Audio("assets/audio/win.mp3");
 var audioLose = new Audio("assets/audio/lose.mp3");
+var audioClick = new Audio("assets/audio/click.mp3");
 
 
 StartGame();
@@ -32,7 +33,15 @@ function UpdateScore(){
     scoreText.text(score);
 }
 
+function PlayButtonSound(){
+    audioClick.pause();
+    audioClick.currentTime = 0;
+    audioClick.play();
+}
+
 function CheckGameStatus(){
+    PlayButtonSound();
+    
     if(score == randomNumber){
         win++
         audioWin.pause();
