@@ -1,0 +1,55 @@
+.main-content
+{
+    color:white;
+    background-color:rgba(14, 14, 14, 0.8);
+}
+
+.round-border
+{
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:rgba(255, 255, 0, 255);
+}
+
+#word-to-guess{
+    letter-spacing: 10px;
+}
+
+#repeated-letter-error{
+    visibility: hidden;
+}
+
+.main-color
+{
+    color:yellow;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.red
+{
+    color:red;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.line-height{
+    line-height: 0.8;
+}
+
+body
+{
+    background-image: url("../images/bg.jpg");
+    background-size: auto; 
+    background-repeat: repeat;
+    background-position: top center; 
+}
+
+hr
+{
+    height:1px;
+    width:60%;
+    background-color:#f9f9f9;
+}
+
