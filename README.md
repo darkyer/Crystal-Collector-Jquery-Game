@@ -8,7 +8,7 @@ This a Jquery Game about collecting cristals, just click the gems to add a value
 
 ## How can I use it?
 
-Anyone can download this project and use it.
+You can Download it and use it locally or just use the github pages link ([Github pages](https://darkyer.github.io/Crystal-Collector-Jquery-Game/))
 
 ## Built With
 
