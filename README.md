@@ -20,7 +20,7 @@ Anyone can download this project and use it.
 
 * **Ernesto Salvador Solares Guerrero** - [darkyer](https://github.com/darkyer)
 
-See also the list of [contributors](https://github.com/darkyer/Gif-Searcher/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/darkyer/Crystal-Collector-Jquery-Game/contributors) who participated in this project.
 
 ## License
 
@@ -35,6 +35,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## URLS
 
-* [Github project](https://github.com/darkyer/Gif-Searcher)
-* [Github pages](https://darkyer.github.io/Gif-Searcher/)
-# unit-4-game
+* [Github project](https://github.com/darkyer/Crystal-Collector-Jquery-Game)
+* [Github pages](https://darkyer.github.io/Crystal-Collector-Jquery-Game/)
